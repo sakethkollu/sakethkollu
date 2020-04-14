@@ -2,8 +2,7 @@ import React , {Component}from 'react';
 
 import {
   HashRouter as Router,
-  Route,
-  Redirect
+  Route
 } from 'react-router-dom';
 
 //Components
@@ -29,7 +28,6 @@ class App extends Component {
           <Route exact path = '/' render = { (props) => <Homepage title = "Welcome to my website"/>}/>
           <Route exact path = '/Projects' render = { (props) => <Projects title = "Projects"/>}/>
           <Route exact path = '/Contact' render = { (props) => <Contact title = "Contact"/>}/>
-          <Redirect exact from ="/" render = { (props) => <Homepage title = "Welcome to my website"/>}/>
         </div>
 
         <Footer />

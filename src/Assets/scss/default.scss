@@ -23,20 +23,24 @@ header {
     }
 
     .title {
+        position: absolute;
         font-size: 50px;
+
+        display: flex;
+        align-self: baseline;
     }
 
-    nav, 
-    nav ul, 
-    nav ul li {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
+    .navBox {
+        
+        display: flex;
+        flex-wrap: wrap;
+        align-self: flex-end;
+        width: 30%;
+        
 
-    nav {
-        margin-right: 10px;
-        margin-left: auto;
+        .navItem {
+           font-size: 75%;
+        }
     }
 
 }
